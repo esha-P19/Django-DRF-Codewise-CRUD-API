@@ -1,0 +1,47 @@
+###
+GET http://127.0.0.1:8000/questions/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/questions/
+Content-Type: application/json
+
+{
+    "title" : "write a python program to check if the number is armstrong number",
+    "language" : "python",
+    "difficulty_level" : "medium",
+    "notes" : "Armstrong number checker",
+    "topic" : "loops",
+    "sampled_input" : "153",
+    "sampled_output" :"it is an armstrong number",
+    "is_active" : true
+}
+
+###
+GET http://127.0.0.1:8000/questions/4/
+Accept: application/json
+
+###
+PUT http://127.0.0.1:8000/questions/3/
+Content-Type: application/json
+
+{
+    "title" : "write a python program to check if the number is armstrong number",
+    "language" : "python",
+    "difficulty_level" : "medium",
+    "notes" : "Armstrong number checker",
+    "topic" : "loops",
+    "sampled_input" : "153",
+    "sampled_output" :"it is an armstrong number",
+    "is_active" : true
+}
+
+###
+DELETE http://127.0.0.1:8000/questions/3/
+
+
+# api call for fetching all submissions
+
+###
+GET http://127.0.0.1:8000/submissions/
+Accept: application/json
